@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Youtube</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+    <h1>Top 5 vídeos do youtube!</h1>
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>{{ title[0] }}</td>
+            <td><a href="{{ links[0] }}">{{ links[0] }}</a>
+            </td>
+        </tr>
+        <tr>
+            <td>{{ title[1] }}</td>
+            <td><a href="{{ links[1] }}">{{ links[1] }}</a>
+            </td>
+        </tr>
+        <tr>
+            <td>{{ title[2] }}</td>
+            <td><a href="{{ links[2] }}">{{ links[2] }}</a>
+            </td>
+        </tr>
+        <tr>
+            <td>{{ title[3] }}</td>
+            <td><a href="{{ links[3] }}">{{ links[3] }}</a>
+            </td>
+        </tr>
+        <tr>
+            <td>{{ title[4] }}</td>
+            <td><a href="{{ links[4] }}">{{ links[4] }}</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
